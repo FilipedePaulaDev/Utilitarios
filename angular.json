@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "utilitarios"
+    }
+  },
+  "defaultProject": "utilitarios",
+  "cli": {
+    "analytics": false
+  }
 }
