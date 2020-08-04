@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './dashboard';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardRoutingComponent } from './dashboard-routing.component';
+import { DadosService } from './dados.service';
 
 
 
@@ -15,6 +16,9 @@ import { DashboardRoutingComponent } from './dashboard-routing.component';
   imports: [
     CommonModule,
     DashboardRoutingModule
+  ],
+  providers: [
+    DadosService
   ]
 })
 export class DashboardModule { }
