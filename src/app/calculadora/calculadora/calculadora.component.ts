@@ -130,9 +130,12 @@ export class CalculadoraComponent implements OnInit {
       return `${this.numero1} ${this.operacao} ${this.numero2} = ${this.resultado.toString()}`;
     }
     if (this.numero2 !== null) {
-      return `${this.numero1} ${this.operacao} ${this.numero2}`
+      return `${this.numero1} ${this.operacao} ${this.numero2}`;
     }
-    return this.numero1
+    if (this.operacao !== null) {
+      return `${this.numero1} ${this.operacao}`;
+    }
+    return this.numero1;
   }
 
 }
